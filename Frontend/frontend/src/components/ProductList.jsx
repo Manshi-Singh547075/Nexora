@@ -37,8 +37,8 @@ export default function ProductLists({ onAddToCart }) {
             key={p._id}
             className="group bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-2xl hover:shadow-blue-500/10 hover:border-blue-200 transition-all duration-500 overflow-hidden hover:-translate-y-2"
           >
-            {/* Image Container with Gradient Overlay */}
-            <div className="relative aspect-square bg-gradient-to-br from-gray-50 to-blue-50/30 flex items-center justify-center p-8 overflow-hidden">
+            {/* Image Container with linear Overlay */}
+            <div className="relative aspect-square bg-linear-to-br from-gray-50 to-blue-50/30 flex items-center justify-center p-8 overflow-hidden">
               {p.image ? (
                 <>
                   <img
@@ -46,7 +46,7 @@ export default function ProductLists({ onAddToCart }) {
                     alt={p.name}
                     className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110 relative z-10"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="absolute inset-0 bg-linear-to-t from-blue-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 </>
               ) : (
                 <div className="text-gray-300 text-5xl">🛒</div>
@@ -67,20 +67,20 @@ export default function ProductLists({ onAddToCart }) {
               <div className="flex items-center justify-between mt-5">
                 <div>
                   <p className="text-xs text-gray-500 font-medium mb-1">Price</p>
-                  <span className="text-3xl font-black bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
+                  <span className="text-3xl font-black bg-linear-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
                     ${p.price}
                   </span>
                 </div>
 
                 <button
                   onClick={() => onAddToCart(p)}
-                  className="group/btn relative bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white pl-5 pr-6 py-3 rounded-xl font-semibold text-sm shadow-lg shadow-blue-500/30 hover:shadow-xl hover:shadow-blue-500/40 active:scale-95 transition-all duration-300 flex items-center space-x-2 overflow-hidden"
+                  className="group/btn relative bg-linear-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white pl-5 pr-6 py-3 rounded-xl font-semibold text-sm shadow-lg shadow-blue-500/30 hover:shadow-xl hover:shadow-blue-500/40 active:scale-95 transition-all duration-300 flex items-center space-x-2 overflow-hidden"
                 >
                   <ShoppingBag className="w-4 h-4 group-hover/btn:rotate-12 transition-transform duration-300" />
                   <span className="relative z-10">Add</span>
                   
                   {/* Shine effect */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-700"></div>
+                  <div className="absolute inset-0 bg-linear-to-r from-transparent via-white/20 to-transparent translate-x-[-100%] group-hover/btn:translate-x-[100%] transition-transform duration-700"></div>
                 </button>
               </div>
             </div>
