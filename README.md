@@ -58,5 +58,12 @@ npm run dev
 ✅ Backend API with MongoDB (Used FakeStore API to mock products)
 
 ### Screenshots
+Landing Page
 <img width="1919" height="1008" alt="Image" src="https://github.com/user-attachments/assets/b9b46884-0fb4-48e9-88c2-f9d4bc83d1ad" />
 
+-----
+
+Cart VieW
+<img width="1783" height="932" alt="Image" src="https://github.com/user-attachments/assets/f7acc6c3-f0b6-4ce7-abfa-41d08b336680" />
+
+Checkout Modal
