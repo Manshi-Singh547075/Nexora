@@ -1,11 +1,14 @@
 export default function CheckoutModal({ cartItems, onClose }) {
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-40">
-      <div className="bg-white p-8 rounded-xl w-96 shadow-lg">
-        <h2 className="text-2xl font-semibold mb-4">Checkout Summary</h2>
-        <ul className="space-y-2">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
+      <div className="bg-white p-8 rounded-xl w-96 shadow-2xl relative">
+        <h2 className="text-2xl font-semibold mb-4 text-center">Checkout Summary</h2>
+        <ul className="space-y-2 max-h-60 overflow-y-auto pr-2">
           {cartItems.map((item) => (
-            <li key={item._id} className="flex justify-between">
+            <li
+              key={item._id}
+              className="flex justify-between border-b border-gray-200 pb-1"
+            >
               <span>{item.productId.name}</span>
               <span>${item.productId.price * item.qty}</span>
             </li>
