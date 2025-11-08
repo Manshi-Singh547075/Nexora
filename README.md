@@ -72,4 +72,4 @@ npm run dev
 
 ### Checkout Modal
 
-<img width="1783" height="932" alt="Image" src="https://github.com/user-attachments/assets/f7acc6c3-f0b6-4ce7-abfa-41d08b336680" />
+<img width="1919" height="898" alt="Image" src="https://github.com/user-attachments/assets/066c9cfc-2f6d-4817-a2cd-459b86cf021c" />
