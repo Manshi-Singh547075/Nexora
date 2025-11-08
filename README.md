@@ -58,5 +58,5 @@ npm run dev
 ✅ Backend API with MongoDB (Used FakeStore API to mock products)
 
 ### Screenshots
-
+<img width="1919" height="1008" alt="Image" src="https://github.com/user-attachments/assets/b9b46884-0fb4-48e9-88c2-f9d4bc83d1ad" />
 
